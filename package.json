@@ -16,6 +16,7 @@
   "scripts": {
     "dev": "blinko-cli dev server",
     "ngrok": "ngrok http 8080",
+    "build": "vite build --mode production",
     "release:publish": "vite build --mode production && blinko-cli release plugin"
   },
   "dependencies": {
