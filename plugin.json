@@ -1,8 +1,8 @@
 {
   "name": "blinko-simple-styles",
-  "author": "madcativ",
-  "url": "https://github.com/madcativ/blinko-simple-styles",
-  "version": "1.0.0",
+  "author": "madcativ, Immerslow",
+  "url": "https://github.com/immerslow/blinko-simple-styles",
+  "version": "1.0.1",
   "minAppVersion": "0.0.0",
   "displayName": {
     "default": "Blinko Simple Styles"

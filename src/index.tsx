@@ -22,21 +22,13 @@ System.register([], (exports) => ({
   execute: () => {
     exports('default', class Plugin implements BasePlugin {
       constructor() {
-        // Initialize plugin with metadata from plugin.json
         Object.assign(this, plugin);
-      }
-
-      // Flag indicating this plugin has a settings panel
-      withSettingPanel = true;
-
-      // /**
-      //  * Renders the settings panel UI
-      //  * @returns {HTMLElement} Container element with rendered settings component
-      //  */
-      renderSettingPanel = () => {
-        const container = document.createElement('div');
-        render(<Setting />, container);
-        return container;
+        this.withSettingPanel = true;
+        this.renderSettingPanel = () => {
+          const container = document.createElement('div');
+          render(<Setting />, container);
+          return container;
+        };
       }
 
       /**
